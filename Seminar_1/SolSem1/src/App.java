@@ -1,17 +1,19 @@
+import java.nio.channels.NonWritableChannelException;
 import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("Hello, world! ");
 
-         task1();
-         task2();
-         task3();
-         String[] lines = { "dom", "domovoy", "domashniy" };
-         int prefixLen = findPrefix(lines);
-         System.out.println(prefixLen);
-        task4();
+        // task1();
+        // task2();
+        // task3();
+        // String[] lines = { "dom", "domovoy", "domashniy" };
+        // int prefixLen = findPrefix(lines);
+        // System.out.println(prefixLen);
+        // task4();
     }
 
     private static void task4() {
@@ -38,8 +40,8 @@ public class App {
                     }
                 } else {
                     res--;
-                        pfxExist = false;
-                        break;
+                    pfxExist = false;
+                    break;
                 }
             }
         }
@@ -71,7 +73,8 @@ public class App {
 
     private static void task3() {
         // Дан массив nums = [3,2,2,3] и число val = 3.
-        // Если в массиве есть числа, равные заданному, нужно перенести эти элементы в
+        // Если в массиве есть числа, равные заданному, нужно перенести эти элементы
+        в
         // конец массива.
         // Таким образом, первые несколько (или все) элементов массива должны быть
         // отличны от заданного, а остальные - равны ему.
@@ -80,17 +83,17 @@ public class App {
         int val = 3;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == val) {
-                for (int j = i; j < arr.length - 1; j++)
-                    arr[j] = arr[j + 1];
-                arr[arr.length - 1] = val;
-            }
+        if (arr[i] == val) {
+        for (int j = i; j < arr.length - 1; j++)
+        arr[j] = arr[j + 1];
+        arr[arr.length - 1] = val;
+        }
         }
 
         for (int item : arr)
-            System.out.printf("%d\t", item);
+        System.out.printf("%d\t", item);
 
-    }
+        }
 
     private static void task2() {
         // Дан массив двоичных чисел, например [1,1,0,1,1,1], вывести
@@ -137,13 +140,17 @@ public class App {
         System.out.println(lt);
 
         if (lt.getHour() >= 18 && lt.getHour() < 23) {
-            System.out.printf("Good evening, %s!\n", name);
+        System.out.printf("Good evening, %s!\n", name);
         } else if (lt.getHour() >= 23 || lt.getHour() < 5) {
-            System.out.printf("Good night, %s!\n", name);
+        System.out.printf("Good night, %s!\n", name);
         } else if (lt.getHour() >= 5 || lt.getHour() < 12) {
-            System.out.printf("Good morning, %s!\n", name);
+        System.out.printf("Good morning, %s!\n", name);
         } else if (lt.getHour() >= 12 || lt.getHour() < 18) {
-            System.out.printf("Good afternoon, %s!\n", name);
+        System.out.printf("Good afternoon, %s!\n", name);
         }
+ 
+       
+
     }
+
 }
