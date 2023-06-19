@@ -4,7 +4,8 @@ public class App {
     public static void main(String[] args) {
     
         // GoTask1();
-        Task2.DelEvenNumbers(args);
+        //  Task2.DelEvenNumbers(args);
+        Task3.minAveregeMax(args);
     }
     private static void GoTask1() {
         Scanner input = new Scanner(System.in);
