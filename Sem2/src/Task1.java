@@ -1,4 +1,4 @@
-public class Task1 {
+public class task1 {
     public static void execute()
     {
         int N = 14;
