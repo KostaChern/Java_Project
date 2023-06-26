@@ -1,17 +1,20 @@
-package PhoneBook;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
+import java.util.Stack;
 
-// Задание
-// 1)Реализуйте структуру телефонной книги с помощью HashMap. Программа также должна учитывать, 
+// Реализуйте структуру телефонной книги с помощью HashMap. Программа также должна учитывать, 
 // что во входной структуре будут повторяющиеся имена с разными телефонами, их необходимо считать, 
 // как одного человека с разными телефонами. Вывод должен быть отсортирован по убыванию числа телефонов.
 // (можно выводить без сортировки, но обязательно в отдельном методе)
 
-public class Task1 {
 
-                // Метод sortedPrint() сортирует и распечатывает данные по абонентам
-    static void sortedPrint(Map<String, ArrayList> map) {
+public class Phon_book {
+
+
+   // -----  Метод sortedPrint() сортирует и распечатывает данные по абонентам -----
+    public static void sortedPrint(Map<String, ArrayList> map) {
 
         // Получаем набор всех ключей abon
         Set<String> keySet = map.keySet();
@@ -51,4 +54,7 @@ public class Task1 {
             }
         }
         System.out.println();
-}
+    }
+}         
+
+    
